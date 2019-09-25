@@ -13,20 +13,21 @@ interface Snippets {
   [key: string]: Snippet;
 }
 
-const generateSnippetsDocument = (snippetPath: string, docFolder: string, replaceBlock: string) => {
-  let readmeTable = [['Snippet Name', 'Generated Code', 'Description']];
-
+const clearDocFolder = (docFolder: string) => {
   if (fs.existsSync(docFolder)) {
     fs.unlinkSync(docFolder);
   }
   shell.mkdir('-p', docFolder);
+};
 
+const loadSnippets = (snippetPath: string) => {
   const data = fs.readFileSync(snippetPath);
   const snippets = JSON.parse(data.toString()) as Snippets;
-  Object.keys(snippets).forEach(key => {
-    const snippet = snippets[key];
+  return snippets;
+};
 
-    const content = `# ${snippet.prefix}
+const generateSnippetDocumentcontent = (key: string, snippet: Snippet) => {
+  const content = `# ${snippet.prefix}
 
 ${key}
 
@@ -34,16 +35,26 @@ ${key}
 ${Array.isArray(snippet.body) ? snippet.body.join('\n') : snippet.body}
 \`\`\`
 `;
+  return content;
+};
 
+function createSnippetDocumentFiles(snippets: Snippets, docFolder: string) {
+  Object.keys(snippets).forEach(key => {
+    const snippet = snippets[key];
     const filePath = path.join(docFolder, `${snippet.prefix}.md`);
+    const content = generateSnippetDocumentcontent(key, snippet);
     fs.writeFileSync(filePath, content);
-
-    readmeTable.push([
-      `\`${snippet.prefix}\``,
-      `[code](${path.join(docFolder, snippet.prefix).replace(new RegExp(/\\/, 'g'), '/')}.md)`,
-      key
-    ]);
   });
+}
+
+const replaceReadmeSnippets = (docFolder: string, snippets: Snippets, replaceBlock: string) => {
+  const readmeTable = [
+    ['Snippet Name', 'Generated Code', 'Description'],
+    ...Object.keys(snippets).map(key => {
+      const snippet = snippets[key];
+      return [`\`${snippet.prefix}\``, `[code](${path.join(docFolder, snippet.prefix).replace(new RegExp(/\\/, 'g'), '/')}.md)`, key];
+    })
+  ];
 
   const readme = fs.readFileSync('README.md').toString('UTF-8');
   const regexString = `<!-- ${replaceBlock} Begin -->.+<!-- ${replaceBlock} End -->`;
@@ -51,7 +62,17 @@ ${Array.isArray(snippet.body) ? snippet.body.join('\n') : snippet.body}
     new RegExp(regexString, 's'),
     `<!-- ${replaceBlock} Begin -->\n\n${markdownTable(readmeTable)}\n\n<!-- ${replaceBlock} End -->`
   );
+
   fs.writeFileSync('README.md', replacedReadme);
+};
+
+const generateSnippetsDocument = (snippetPath: string, docFolder: string, replaceBlock: string) => {
+  clearDocFolder(docFolder);
+
+  const snippets = loadSnippets(snippetPath);
+
+  createSnippetDocumentFiles(snippets, docFolder);
+  replaceReadmeSnippets(docFolder, snippets, replaceBlock);
 };
 
 generateSnippetsDocument('snippets/schematics-snippets.json', 'docs/schematics', 'Schematics');
