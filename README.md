@@ -10,7 +10,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 ### Schematics Snippets
 
-#### In TypeScript
+#### In \*.ts
 
 <!-- Schematics Begin -->
 
@@ -28,7 +28,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 <!-- Schematics End -->
 
-### In schema.json
+#### In schema.json
 
 <!-- Schema Begin -->
 
@@ -39,7 +39,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 <!-- Schema End -->
 
-### TypeScript Snippets
+### TypeScript Compiler API Snippets
 
 <!-- TypeScript Begin -->
 
