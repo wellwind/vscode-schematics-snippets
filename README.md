@@ -5,7 +5,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 ## Features
 
 - Simply use `sch-*` schematics to generate schematics related codes.
-- Sometimes we should use TypeScript Compiler API, use `ts-*` schematics to generate some useful ast (Abstract Syntax Tree) manipulation code.
+- Sometimes we might use TypeScript Compiler API, use `ts-*` schematics to generate some useful AST (Abstract Syntax Tree) manipulation code.
 - For the code of snippet, see it [here](docs/).
 
 ### Schematics Snippets
