@@ -35,5 +35,20 @@
     "scope": "typescript",
     "prefix": "sch-tree-read",
     "body": "const ${1:content} = tree.read(${2:path}).toString('${3:UTF-8}')"
+  },
+  "Check a file exist in the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-exist",
+    "body": "tree.exist(${1:file})"
+  },
+  "Run external schematics": {
+    "scope": "typescript",
+    "prefix": "sch-external-schematics",
+    "body": [
+      "externalSchematic('${1:collection}', '${2:schematic}', {",
+      "  ${3:...options}",
+      "  }",
+      "})"
+    ]
   }
 }
