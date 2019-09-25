@@ -57,5 +57,31 @@
     "body": [
       "chain([${1:rule1}, ${2:rule2}])"
     ]
+  },
+  "Import functions to apply and merge templates": {
+    "scope": "typescript",
+    "prefix": "sch-apply-merge-templates-import",
+    "body": [
+      "import { apply, url, applyTemplates, move, chain, mergeWith } from '@angular-devkit/core';",
+      "import { strings, normalize } from '@angular-devkit/core';"
+    ]
+  },
+  "Apply and merge templates": {
+    "scope": "typescript",
+    "prefix": "sch-apply-merge-templates",
+    "body": [
+      "const ${1:templateSource} = apply(url('${2:./files}'), [",
+      "  applyTemplates({",
+      "    classify: strings.classify,",
+      "    dasherize: strings.dasherize,",
+      "    name: options.name",
+      "  }),",
+      "  move(normalize(options.path as string))",
+      "]);",
+      "",
+      "return chain([",
+      "  mergeWith(${1:templateSource})",
+      "]);"
+    ]
   }
 }
