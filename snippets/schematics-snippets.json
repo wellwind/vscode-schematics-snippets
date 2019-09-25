@@ -72,5 +72,17 @@
       "  mergeWith(${1:templateSource})",
       "]);"
     ]
+  },
+  "Read json file": {
+    "prefix": "sch-read-json-file",
+    "body": "const ${1:content} = JSON.parse(tree.read(${2:'angular.json'}).toString('{3:UTF-8}'));"
+  },
+  "Write json file": {
+    "prefix": "sch-write-json-file",
+    "body": "tree.overwrite(${1:'angular.json'}, JSON.stringify(${2:jsonObject}, null, 2));"
+  },
+  "Create json file": {
+    "prefix": "sch-create-json-file",
+    "body": "tree.create(${1:'angular.json'}, JSON.stringify(${2:jsonObject}, null, 2));"
   }
 }
