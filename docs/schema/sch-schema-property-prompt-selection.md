@@ -1,6 +1,6 @@
-# sch-schema-property-with-prompt
+# sch-schema-property-prompt-selection
 
-Add a property to schema.json with prompt
+Add a property to schema.json contains prompt selection
 
 ```
 "${1:property}": {

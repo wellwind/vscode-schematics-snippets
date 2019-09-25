@@ -32,10 +32,11 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 <!-- Schema Begin -->
 
-| Snippet Name                      | Generated Code                                         | Description                               |
-| --------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-| `sch-schema-property`             | [code](docs/schema/sch-schema-property.md)             | Add a property to schema.json             |
-| `sch-schema-property-with-prompt` | [code](docs/schema/sch-schema-property-with-prompt.md) | Add a property to schema.json with prompt |
+| Snippet Name                           | Generated Code                                              | Description                                             |
+| -------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- |
+| `sch-schema-property`                  | [code](docs/schema/sch-schema-property.md)                  | Add a property to schema.json                           |
+| `sch-schema-property-prompt-yes-no`    | [code](docs/schema/sch-schema-property-prompt-yes-no.md)    | Add a property to schema.json contains prompt Y/N       |
+| `sch-schema-property-prompt-selection` | [code](docs/schema/sch-schema-property-prompt-selection.md) | Add a property to schema.json contains prompt selection |
 
 <!-- Schema End -->
 

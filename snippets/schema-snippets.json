@@ -9,8 +9,19 @@
       "}"
     ]
   },
-  "Add a property to schema.json with prompt": {
-    "prefix": "sch-schema-property-with-prompt",
+  "Add a property to schema.json contains prompt Y/N": {
+    "prefix": "sch-schema-property-prompt-yes-no",
+    "body": [
+      "\"${1:property}\": {",
+      "  \"description\": \"${2:description}\",",
+      "  \"type\": \"${3:boolean}\",",
+      "  \"default\": \"${4:true}\",",
+      "  \"x-prompt\": \"${5:message}\"",
+      "}"
+    ]
+  },
+  "Add a property to schema.json contains prompt selection": {
+    "prefix": "sch-schema-property-prompt-selection",
     "body": [
       "\"${1:property}\": {",
       "  \"description\": \"${2:description}\",",
