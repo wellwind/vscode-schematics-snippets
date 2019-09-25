@@ -1,4 +1,9 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+docs/
+document-generator.ts
+icon.svg
+yarn*
 vsc-extension-quickstart.md
+

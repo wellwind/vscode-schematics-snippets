@@ -6,29 +6,34 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 - Simply use `sch-*` schematics to generate schematics related codes.
 - Sometimes we should use TypeScript Compiler API, use `ts-*` schematics to generate some useful ast (Abstract Syntax Tree) manipulation code.
-- For the code of snippet, see it here.
+- For the code of snippet, see it [here](docs/).
 
 ### Schematics Snippets
 
-<!-- Schematics Table Begin -->
+<!-- Schematics Begin -->
 
-| Snippet Name         | Source Code                                     | Description                         |
-| -------------------- | ----------------------------------------------- | ----------------------------------- |
-| `sch-rule`           | [code](./docs/schematics/sch-rule.md)           | Generate a basic rule of schematics |
-| `sch-tree-create`    | [code](./docs/schematics/sch-tree-create.md)    | Create file to the tree             |
-| `sch-tree-overwrite` | [code](./docs/schematics/sch-tree-overwrite.md) | Overwrite file in the tree          |
+| Snippet Name         | Generated Code                                | Description                            |
+| -------------------- | --------------------------------------------- | -------------------------------------- |
+| `sch-rule`           | [code](docs/schematics/sch-rule.md)           | Generate a basic rule of schematics    |
+| `sch-tree-create`    | [code](docs/schematics/sch-tree-create.md)    | Create a file to the tree              |
+| `sch-tree-overwrite` | [code](docs/schematics/sch-tree-overwrite.md) | Overwrite a file content from the tree |
+| `sch-tree-delete`    | [code](docs/schematics/sch-tree-delete.md)    | Delete a file from the tree            |
+| `sch-tree-rename`    | [code](docs/schematics/sch-tree-rename.md)    | Rename a file from the tree            |
+| `sch-tree-read`      | [code](docs/schematics/sch-tree-read.md)      | Read a file from the tree              |
 
-<!-- Schematics Table End -->
+<!-- Schematics End -->
 
 ### TypeScript Snippets
 
-<!-- TypeScript Table Begin -->
+<!-- TypeScript Begin -->
 
-| Snippet Name | Source Code                             | Description                    |
-| ------------ | --------------------------------------- | ------------------------------ |
-| `ts-import`  | [code]('./docs/schematics/ts-import.md) | Import TypeScript Compiler API |
+| Snippet Name       | Generated Code                              | Description                    |
+| ------------------ | ------------------------------------------- | ------------------------------ |
+| `ts-import`        | [code](docs/typescript/ts-import.md)        | Import TypeScript Compiler API |
+| `ts-string-to-ast` | [code](docs/typescript/ts-string-to-ast.md) | Convert string to AST node     |
+| `ts-ast-to-code`   | [code](docs/typescript/ts-ast-to-code.md)   | Convert AST node to code       |
 
-<!-- TypeScript Table End -->
+<!-- TypeScript End -->
 
 ## Release Notes
 
