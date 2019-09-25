@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.2 192.7">
+ <defs>
+  <style>.cls-1{fill:#1de9b6;}.cls-2{fill:#00bfa5;}.cls-3{fill:#fff;}.cls-4{fill:#fff;}</style>
+ </defs>
+ <title>labs</title>
+
+ <g>
+  <title>Layer 1</title>
+  <polygon id="svg_1" points="89.4 0 89.4 0 89.4 0 0 32 13.5 150.4 89.4 192.7 89.4 192.7 89.4 192.7 165.4 150.4 179.2 32 89.4 0" class="cls-1"/>
+  <polygon id="svg_2" points="89.4 0 89.4 21.4 89.4 21.4 89.4 118.7 89.4 118.7 89.4 192.7 89.4 192.7 165.4 150.4 179.2 32 89.4 0" class="cls-2"/>
+  <path id="svg_3" d="m42.8,55l0,90l100,0l0,-90l-100,0zm95.2,84.9l-90.5,0l0,-79.8l90.6,0l0,79.8l-0.1,0z" class="cls-3"/>
+  <polygon id="svg_4" points="60.1 111.4 63.5 114.9 82.8 95.5 63.2 75.9 59.8 79.3 76 95.5 60.1 111.4" class="cls-3"/>
+  <rect id="svg_5" height="4" width="30" y="117.2" x="82.8" class="cls-3"/>
+ </g>
+</svg>

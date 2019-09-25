@@ -2,6 +2,7 @@
   "name": "vscode-schematics-snippets",
   "displayName": "Schematics Snippets",
   "description": "Code snippets collection for writing @angular-devkit/schematics",
+  "publisher": "mikehuang",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.38.0"
@@ -9,8 +10,10 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "icon.png",
   "contributes": {
-    "snippets": [{
+    "snippets": [
+      {
         "language": "typescript",
         "path": "./snippets/schematics-snippets.json"
       },
@@ -19,5 +22,18 @@
         "path": "./snippets/typescript-snippets.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wellwind/vscode-schematics-snippets.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "schematics",
+    "typescript",
+    "code snippets"
+  ],
+  "devDependencies": {
+    "ts-node": "^8.4.1"
   }
 }
