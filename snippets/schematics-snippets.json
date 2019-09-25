@@ -1,0 +1,39 @@
+{
+  "Generate a basic rule of schematics": {
+    "scope": "typescript",
+    "prefix": "sch-rule",
+    "body": [
+      "function ${1:name}(${2:options}: ${3:any}): Rule {",
+      "  return (${4:tree}: Tree, ${5:context}: SchematicContext) => {",
+      "    ${6}",
+      "    return tree;",
+      "  };",
+      "}"
+    ]
+  },
+  "Create a file to the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-create",
+    "body": "tree.create(${1:path}, ${2:content})"
+  },
+  "Overwrite a file content from the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-overwrite",
+    "body": "tree.overwrite(${1:path}, ${2:content})"
+  },
+  "Delete a file from the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-delete",
+    "body": "tree.delete(${1:path})"
+  },
+  "Rename a file from the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-rename",
+    "body": "tree.rename(${1:from}, ${2:to})"
+  },
+  "Read a file from the tree": {
+    "scope": "typescript",
+    "prefix": "sch-tree-read",
+    "body": "const ${1:content} = tree.read(${2:path}).toString('${3:UTF-8}')"
+  }
+}
