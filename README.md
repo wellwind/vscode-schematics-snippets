@@ -10,18 +10,34 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 ### Schematics Snippets
 
+#### In TypeScript
+
 <!-- Schematics Begin -->
 
-| Snippet Name         | Generated Code                                | Description                            |
-| -------------------- | --------------------------------------------- | -------------------------------------- |
-| `sch-rule`           | [code](docs/schematics/sch-rule.md)           | Generate a basic rule of schematics    |
-| `sch-tree-create`    | [code](docs/schematics/sch-tree-create.md)    | Create a file to the tree              |
-| `sch-tree-overwrite` | [code](docs/schematics/sch-tree-overwrite.md) | Overwrite a file content from the tree |
-| `sch-tree-delete`    | [code](docs/schematics/sch-tree-delete.md)    | Delete a file from the tree            |
-| `sch-tree-rename`    | [code](docs/schematics/sch-tree-rename.md)    | Rename a file from the tree            |
-| `sch-tree-read`      | [code](docs/schematics/sch-tree-read.md)      | Read a file from the tree              |
+| Snippet Name              | Generated Code                                     | Description                            |
+| ------------------------- | -------------------------------------------------- | -------------------------------------- |
+| `sch-rule`                | [code](docs/schematics/sch-rule.md)                | Generate a basic rule of schematics    |
+| `sch-tree-create`         | [code](docs/schematics/sch-tree-create.md)         | Create a file to the tree              |
+| `sch-tree-overwrite`      | [code](docs/schematics/sch-tree-overwrite.md)      | Overwrite a file content from the tree |
+| `sch-tree-delete`         | [code](docs/schematics/sch-tree-delete.md)         | Delete a file from the tree            |
+| `sch-tree-rename`         | [code](docs/schematics/sch-tree-rename.md)         | Rename a file from the tree            |
+| `sch-tree-read`           | [code](docs/schematics/sch-tree-read.md)           | Read a file from the tree              |
+| `sch-tree-exist`          | [code](docs/schematics/sch-tree-exist.md)          | Check a file exist in the tree         |
+| `sch-external-schematics` | [code](docs/schematics/sch-external-schematics.md) | Run external schematics                |
+| `sch-chain-rules`         | [code](docs/schematics/sch-chain-rules.md)         | Chain schematic rules                  |
 
 <!-- Schematics End -->
+
+### In schema.json
+
+<!-- Schema Begin -->
+
+| Snippet Name                      | Generated Code                                         | Description                               |
+| --------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+| `sch-schema-property`             | [code](docs/schema/sch-schema-property.md)             | Add a property to schema.json             |
+| `sch-schema-property-with-prompt` | [code](docs/schema/sch-schema-property-with-prompt.md) | Add a property to schema.json with prompt |
+
+<!-- Schema End -->
 
 ### TypeScript Snippets
 
