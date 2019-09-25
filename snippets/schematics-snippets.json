@@ -50,5 +50,12 @@
       "  }",
       "})"
     ]
+  },
+  "Chain schematic rules": {
+    "scope": "typescript",
+    "prefix": "sch-chain-rules",
+    "body": [
+      "chain([${1:rule1}, ${2:rule2}])"
+    ]
   }
 }
