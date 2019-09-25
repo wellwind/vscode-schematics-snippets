@@ -1,16 +1,13 @@
 {
   "Import TypeScript Compiler API": {
-    "scope": "typescript",
     "prefix": "ts-import",
     "body": "import * as ts from 'typescript'"
   },
   "Convert string to AST node": {
-    "scope": "typescript",
     "prefix": "ts-string-to-ast",
     "body": "const ${1:ast} = ts.createSourceFile('', ${2:content}, ${3:ts.ScriptTarget.Latest})"
   },
   "Convert AST node to code": {
-    "scope": "typescript",
     "prefix": "ts-ast-to-code",
     "body": [
       "const resultFile = ts.createSourceFile(",

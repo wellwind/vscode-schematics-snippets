@@ -1,6 +1,5 @@
 {
   "Generate a basic rule of schematics": {
-    "scope": "typescript",
     "prefix": "sch-rule",
     "body": [
       "function ${1:name}(${2:options}: ${3:any}): Rule {",
@@ -12,37 +11,30 @@
     ]
   },
   "Create a file to the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-create",
     "body": "tree.create(${1:path}, ${2:content})"
   },
   "Overwrite a file content from the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-overwrite",
     "body": "tree.overwrite(${1:path}, ${2:content})"
   },
   "Delete a file from the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-delete",
     "body": "tree.delete(${1:path})"
   },
   "Rename a file from the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-rename",
     "body": "tree.rename(${1:from}, ${2:to})"
   },
   "Read a file from the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-read",
     "body": "const ${1:content} = tree.read(${2:path}).toString('${3:UTF-8}')"
   },
   "Check a file exist in the tree": {
-    "scope": "typescript",
     "prefix": "sch-tree-exist",
     "body": "tree.exist(${1:file})"
   },
   "Run external schematics": {
-    "scope": "typescript",
     "prefix": "sch-external-schematics",
     "body": [
       "externalSchematic('${1:collection}', '${2:schematic}', {",
@@ -52,14 +44,12 @@
     ]
   },
   "Chain schematic rules": {
-    "scope": "typescript",
     "prefix": "sch-chain-rules",
     "body": [
       "chain([${1:rule1}, ${2:rule2}])"
     ]
   },
   "Import functions to apply and merge templates": {
-    "scope": "typescript",
     "prefix": "sch-apply-merge-templates-import",
     "body": [
       "import { apply, url, applyTemplates, move, chain, mergeWith } from '@angular-devkit/core';",
@@ -67,7 +57,6 @@
     ]
   },
   "Apply and merge templates": {
-    "scope": "typescript",
     "prefix": "sch-apply-merge-templates",
     "body": [
       "const ${1:templateSource} = apply(url('${2:./files}'), [",
