@@ -50,9 +50,9 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 | Snippet Name                           | Generated Code                                              | Description                                             |
 | -------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- |
-| `sch-clc-new-sch`                      | [code](docs/schema/sch-clc-new-sch.md)                      | Add a schematic to collection.json by deafult function  |
-| `sch-clc-new-sch-function-name`        | [code](docs/schema/sch-clc-new-sch-function-name.md)        | Add a schematic to collection.json by function name     |
-| `sch-clc-ng-add`                       | [code](docs/schema/sch-clc-ng-add.md)                       | Add a schematic of "ng-add" to collection.json          |
+| `sch-coll-new-sch`                     | [code](docs/schema/sch-coll-new-sch.md)                     | Add a schematic to collection.json by deafult function  |
+| `sch-coll-new-sch-function-name`       | [code](docs/schema/sch-coll-new-sch-function-name.md)       | Add a schematic to collection.json by function name     |
+| `sch-coll-ng-add`                      | [code](docs/schema/sch-coll-ng-add.md)                      | Add a schematic of "ng-add" to collection.json          |
 
 <!-- Collection End -->
 
