@@ -5,6 +5,7 @@
   "publisher": "mikehuang",
   "version": "1.1.2",
   "scripts": {
+    "build": "npm run gen:document",
     "vsce:publish": "vsce publish",
     "vsce:package": "vsce package",
     "gen:document": "ts-node document-generator.ts"
@@ -17,8 +18,7 @@
   ],
   "icon": "icon.png",
   "contributes": {
-    "snippets": [
-      {
+    "snippets": [{
         "language": "json",
         "path": "./snippets/schema-snippets.json"
       },
