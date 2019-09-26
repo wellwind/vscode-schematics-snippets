@@ -1,21 +1,21 @@
 {
   "Add a schematic to collection.json by deafult function": {
-    "prefix": "sch-coll-new-sch",
+    "prefix": "sch-coll-new-schematic-default",
     "body": [
-      "\"${0:schematic-name}\": {",
-      "  \"description\": \"Describe the schematic.\",",
-      "  \"factory\": \"./${0:schematic-name}\",",
-      "  \"schema\": \"./${0:schematic-name}/schema.json\"",
+      "\"${1:schematic-name}\": {",
+      "  \"description\": \"${2:Description.}\",",
+      "  \"factory\": \"./${1:schematic-name}\",",
+      "  \"schema\": \"./${1:schematic-name}/schema.json\"",
       "}"
     ]
   },
   "Add a schematic to collection.json by function name": {
-    "prefix": "sch-coll-new-sch-function-name",
+    "prefix": "sch-coll-new-schematic-function-name",
     "body": [
-      "\"${0:schematic-name}\": {",
-      "  \"description\": \"Describe the schematic.\",",
-      "  \"factory\": \"./${0:schematic-name}/index#${1:schematicName}\",",
-      "  \"schema\": \"./${0:schematic-name}/schema.json\"",
+      "\"${1:schematic-name}\": {",
+      "  \"description\": \"${3:Description.}\",",
+      "  \"factory\": \"./${1:schematic-name}/index#${2:functionName}\",",
+      "  \"schema\": \"./${1:schematic-name}/schema.json\"",
       "}"
     ]
   },
@@ -23,7 +23,7 @@
     "prefix": "sch-coll-ng-add",
     "body": [
       "\"ng-add\": {",
-      "  \"description\": \"Describe the schematic.\",",
+      "  \"description\": \"${1:Description...}\",",
       "  \"factory\": \"./ng-add\",",
       "}"
     ]
