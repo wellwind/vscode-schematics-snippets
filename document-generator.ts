@@ -14,9 +14,7 @@ interface Snippets {
 }
 
 const clearDocFolder = (docFolder: string) => {
-  if (fs.existsSync(docFolder)) {
-    fs.unlinkSync(docFolder);
-  }
+  shell.rm('-rf', docFolder);
   shell.mkdir('-p', docFolder);
 };
 
