@@ -75,6 +75,7 @@ const generateSnippetsDocument = (snippetPath: string, docFolder: string, replac
 
 generateSnippetsDocument('snippets/schematics-snippets.json', 'docs/schematics', 'Schematics');
 generateSnippetsDocument('snippets/schema-snippets.json', 'docs/schema', 'Schema');
+generateSnippetsDocument('snippets/collection-snippets.json', 'docs/collection', 'Collection');
 generateSnippetsDocument('snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript');
 
 console.info('Documents generated.');

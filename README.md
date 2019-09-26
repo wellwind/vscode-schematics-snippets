@@ -46,13 +46,14 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 <!-- Schema End -->
 
 #### In collection.json
+
 <!-- Collection Begin -->
 
-| Snippet Name                           | Generated Code                                              | Description                                             |
-| -------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- |
-| `sch-coll-new-sch`                     | [code](docs/schema/sch-coll-new-sch.md)                     | Add a schematic to collection.json by deafult function  |
-| `sch-coll-new-sch-function-name`       | [code](docs/schema/sch-coll-new-sch-function-name.md)       | Add a schematic to collection.json by function name     |
-| `sch-coll-ng-add`                      | [code](docs/schema/sch-coll-ng-add.md)                      | Add a schematic of "ng-add" to collection.json          |
+| Snippet Name                     | Generated Code                                            | Description                                            |
+| -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
+| `sch-coll-new-sch`               | [code](docs/collection/sch-coll-new-sch.md)               | Add a schematic to collection.json by deafult function |
+| `sch-coll-new-sch-function-name` | [code](docs/collection/sch-coll-new-sch-function-name.md) | Add a schematic to collection.json by function name    |
+| `sch-coll-ng-add`                | [code](docs/collection/sch-coll-ng-add.md)                | Add a schematic of "ng-add" to collection.json         |
 
 <!-- Collection End -->
 
