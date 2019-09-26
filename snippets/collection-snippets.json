@@ -24,7 +24,7 @@
     "body": [
       "\"ng-add\": {",
       "  \"description\": \"${1:Description...}\",",
-      "  \"factory\": \"./ng-add\",",
+      "  \"factory\": \"./ng-add\"",
       "}"
     ]
   }
