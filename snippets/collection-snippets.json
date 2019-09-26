@@ -1,0 +1,31 @@
+{
+  "Add a schematic to collection.json by deafult function": {
+    "prefix": "sch-clc-new-sch",
+    "body": [
+      "\"${0:schematic-name}\": {",
+      "  \"description\": \"Describe the schematic.\",",
+      "  \"factory\": \"./${0:schematic-name}\",",
+      "  \"schema\": \"./${0:schematic-name}/schema.json\"",
+      "}"
+    ]
+  },
+  "Add a schematic to collection.json by function name": {
+    "prefix": "sch-clc-new-sch-function-name",
+    "body": [
+      "\"${0:schematic-name}\": {",
+      "  \"description\": \"Describe the schematic.\",",
+      "  \"factory\": \"./${0:schematic-name}/index#${1:schematicName}\",",
+      "  \"schema\": \"./${0:schematic-name}/schema.json\"",
+      "}"
+    ]
+  },
+  "Add a schematic of \"ng-add\" to collection.json": {
+    "prefix": "sch-clc-ng-add",
+    "body": [
+      "\"ng-add\": {",
+      "  \"description\": \"Describe the schematic.\",",
+      "  \"factory\": \"./ng-add\",",
+      "}"
+    ]
+  }
+}

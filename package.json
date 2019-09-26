@@ -23,6 +23,10 @@
         "path": "./snippets/schema-snippets.json"
       },
       {
+        "language": "json",
+        "path": "./snippets/collection-snippets.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/schematics-snippets.json"
       },
