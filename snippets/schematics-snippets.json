@@ -22,6 +22,10 @@
     "prefix": "sch-tree-delete",
     "body": "tree.delete(${1:path})"
   },
+  "Delete a directory from the tree": {
+    "prefix": "sch-tree-delete-directory",
+    "body": "tree.getDir(path).visit(filePath => tree.delete(filePath));"
+  },
   "Rename a file from the tree": {
     "prefix": "sch-tree-rename",
     "body": "tree.rename(${1:from}, ${2:to})"
