@@ -7,6 +7,9 @@
   "scripts": {
     "build": "npm run gen:document",
     "vsce:publish": "vsce publish",
+    "vsce:publish:patch": "vsce publish patch",
+    "vsce:publish:minor": "vsce publish minor",
+    "vsce:publish:major": "vsce publish major",
     "vsce:package": "vsce package",
     "gen:document": "ts-node document-generator.ts"
   },
