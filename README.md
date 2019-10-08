@@ -20,6 +20,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 | `sch-tree-create`                  | [code](docs/schematics/sch-tree-create.md)                  | Create a file to the tree                     |
 | `sch-tree-overwrite`               | [code](docs/schematics/sch-tree-overwrite.md)               | Overwrite a file content from the tree        |
 | `sch-tree-delete`                  | [code](docs/schematics/sch-tree-delete.md)                  | Delete a file from the tree                   |
+| `sch-tree-delete-directory`        | [code](docs/schematics/sch-tree-delete-directory.md)        | Delete a directory from the tree              |
 | `sch-tree-rename`                  | [code](docs/schematics/sch-tree-rename.md)                  | Rename a file from the tree                   |
 | `sch-tree-read`                    | [code](docs/schematics/sch-tree-read.md)                    | Read a file from the tree                     |
 | `sch-tree-exist`                   | [code](docs/schematics/sch-tree-exist.md)                   | Check a file exist in the tree                |
