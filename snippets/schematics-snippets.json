@@ -75,7 +75,7 @@
   },
   "Read json file": {
     "prefix": "sch-read-json-file",
-    "body": "const ${1:content} = JSON.parse(tree.read(${2:'angular.json'}).toString('{3:UTF-8}'));"
+    "body": "const ${1:content} = JSON.parse(tree.read(${2:'angular.json'}).toString('${3:UTF-8}'));"
   },
   "Write json file": {
     "prefix": "sch-write-json-file",
