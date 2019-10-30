@@ -101,5 +101,13 @@
   "Create json file": {
     "prefix": "sch-create-json-file",
     "body": "tree.create(${1:'angular.json'}, JSON.stringify(${2:jsonObject}, null, 2));"
+  },
+  "Import install package task": {
+    "prefix": "sch-import-install-package-task",
+    "body": "import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';"
+  },
+  "Run install package task": {
+    "prefix": "sch-install-package",
+    "body": "_context.addTask(new NodePackageInstallTask());"
   }
 }
