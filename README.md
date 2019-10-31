@@ -25,13 +25,20 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 | `sch-tree-rename`                  | [code](docs/schematics/sch-tree-rename.md)                  | Rename a file from the tree                          |
 | `sch-tree-read`                    | [code](docs/schematics/sch-tree-read.md)                    | Read a file from the tree                            |
 | `sch-tree-exist`                   | [code](docs/schematics/sch-tree-exist.md)                   | Check a file exist in the tree                       |
+| `sch-import-external-schematic`    | [code](docs/schematics/sch-import-external-schematic.md)    | Import externalSchematic                             |
 | `sch-external-schematics`          | [code](docs/schematics/sch-external-schematics.md)          | Run external schematics                              |
+| `sch-import-chain`                 | [code](docs/schematics/sch-import-chain.md)                 | Import chain rule                                    |
 | `sch-chain-rules`                  | [code](docs/schematics/sch-chain-rules.md)                  | Chain schematic rules                                |
 | `sch-apply-merge-templates-import` | [code](docs/schematics/sch-apply-merge-templates-import.md) | Import functions to apply and merge templates        |
 | `sch-apply-merge-templates`        | [code](docs/schematics/sch-apply-merge-templates.md)        | Apply and merge templates                            |
 | `sch-read-json-file`               | [code](docs/schematics/sch-read-json-file.md)               | Read json file                                       |
 | `sch-write-json-file`              | [code](docs/schematics/sch-write-json-file.md)              | Write json file                                      |
 | `sch-create-json-file`             | [code](docs/schematics/sch-create-json-file.md)             | Create json file                                     |
+| `sch-import-install-package-task`  | [code](docs/schematics/sch-import-install-package-task.md)  | Import install package task                          |
+| `sch-install-package`              | [code](docs/schematics/sch-install-package.md)              | Run install package task                             |
+| `sch-set-package-dependencies`     | [code](docs/schematics/sch-set-package-dependencies.md)     | Set dependencies to package.json                     |
+| `sch-set-package-dev-dependencies` | [code](docs/schematics/sch-set-package-dev-dependencies.md) | Set devDependencies to package.json                  |
+| `sch-set-package-scripts`          | [code](docs/schematics/sch-set-package-scripts.md)          | Set script to package.json                           |
 
 <!-- Schematics End -->
 

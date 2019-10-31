@@ -2,7 +2,7 @@
   "Generate an export function with schematics template": {
     "prefix": "sch-export-function-template",
     "body": [
-      "import { Rule, SchematicContext, Tree } from \"@angular-devkit/schematics\";",
+      "import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';",
       "",
       "export function ${1:index}(_options: any): Rule {",
       "  return (tree: Tree, _context: SchematicContext) => {",
@@ -51,6 +51,10 @@
     "prefix": "sch-tree-exist",
     "body": "tree.exist(${1:file})"
   },
+  "Import externalSchematic": {
+    "prefix": "sch-import-external-schematic",
+    "body": "import { externalSchematic } from '@angular-devkit/schematics';"
+  },
   "Run external schematics": {
     "prefix": "sch-external-schematics",
     "body": [
@@ -59,6 +63,10 @@
       "  }",
       "})"
     ]
+  },
+  "Import chain rule": {
+    "prefix": "sch-import-chain",
+    "body": "import { chain } from '@angular-devkit/schematics';"
   },
   "Chain schematic rules": {
     "prefix": "sch-chain-rules",
@@ -109,5 +117,29 @@
   "Run install package task": {
     "prefix": "sch-install-package",
     "body": "_context.addTask(new NodePackageInstallTask());"
+  },
+  "Set dependencies to package.json": {
+    "prefix": "sch-set-package-dependencies",
+    "body": [
+      "const content = JSON.parse(tree.read('package.json')!.toString('UTF-8'));",
+      "content.dependencies['${1:package}'] = '${2:version}';",
+      "tree.overwrite('package.json', JSON.stringify(content, null, 2));"
+    ]
+  },
+  "Set devDependencies to package.json": {
+    "prefix": "sch-set-package-dev-dependencies",
+    "body": [
+      "const content = JSON.parse(tree.read('package.json')!.toString('UTF-8'));",
+      "content.devDependencies['${1:package}'] = '${2:version}';",
+      "tree.overwrite('package.json', JSON.stringify(content, null, 2));"
+    ]
+  },
+  "Set script to package.json": {
+    "prefix": "sch-set-package-scripts",
+    "body": [
+      "const content = JSON.parse(tree.read('package.json')!.toString('UTF-8'));",
+      "content.scripts['${1:alias}'] = '${2:command}';",
+      "tree.overwrite('package.json', JSON.stringify(content, null, 2));"
+    ]
   }
 }

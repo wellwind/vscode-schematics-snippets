@@ -1,3 +1,4 @@
+import { exec } from 'child_process';
 import * as fs from 'fs';
 import * as markdownTable from 'markdown-table';
 import * as path from 'path';
@@ -77,5 +78,8 @@ generateSnippetsDocument('snippets/schematics-snippets.json', 'docs/schematics',
 generateSnippetsDocument('snippets/schema-snippets.json', 'docs/schema', 'Schema');
 generateSnippetsDocument('snippets/collection-snippets.json', 'docs/collection', 'Collection');
 generateSnippetsDocument('snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript');
+
+exec('git add .');
+exec('git commit -m "chore(doc): update documents"');
 
 console.info('Documents generated.');
