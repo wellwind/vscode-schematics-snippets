@@ -1,6 +1,5 @@
 import { exec } from 'child_process';
 import * as fs from 'fs';
-// import * as markdownTable from 'markdown-table';
 import * as path from 'path';
 import * as shell from 'shelljs';
 const markdownTable = require('markdown-table');
@@ -26,23 +25,23 @@ const loadSnippets = (snippetPath: string) => {
   return snippets;
 };
 
-const generateSnippetDocumentcontent = (key: string, snippet: Snippet) => {
+const generateSnippetDocumentcontent = (key: string, snippet: Snippet, lang: string) => {
   const content = `# ${snippet.prefix}
 
 ${key}
 
-\`\`\`
+\`\`\`${lang}
 ${Array.isArray(snippet.body) ? snippet.body.join('\n') : snippet.body}
 \`\`\`
 `;
   return content;
 };
 
-function createSnippetDocumentFiles(snippets: Snippets, docFolder: string) {
+function createSnippetDocumentFiles(snippets: Snippets, docFolder: string, lang: string) {
   Object.keys(snippets).forEach(key => {
     const snippet = snippets[key];
     const filePath = path.join(docFolder, `${snippet.prefix}.md`);
-    const content = generateSnippetDocumentcontent(key, snippet);
+    const content = generateSnippetDocumentcontent(key, snippet, lang);
     fs.writeFileSync(filePath, content);
   });
 }
@@ -66,19 +65,19 @@ const replaceReadmeSnippets = (docFolder: string, snippets: Snippets, replaceBlo
   fs.writeFileSync('README.md', replacedReadme);
 };
 
-const generateSnippetsDocument = (snippetPath: string, docFolder: string, replaceBlock: string) => {
+const generateSnippetsDocument = (snippetPath: string, docFolder: string, replaceBlock: string, lang: string) => {
   clearDocFolder(docFolder);
 
   const snippets = loadSnippets(snippetPath);
 
-  createSnippetDocumentFiles(snippets, docFolder);
+  createSnippetDocumentFiles(snippets, docFolder, lang);
   replaceReadmeSnippets(docFolder, snippets, replaceBlock);
 };
 
-generateSnippetsDocument('src/snippets/schematics-snippets.json', 'docs/schematics', 'Schematics');
-generateSnippetsDocument('src/snippets/schema-snippets.json', 'docs/schema', 'Schema');
-generateSnippetsDocument('src/snippets/collection-snippets.json', 'docs/collection', 'Collection');
-generateSnippetsDocument('src/snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript');
+generateSnippetsDocument('src/snippets/schematics-snippets.json', 'docs/schematics', 'Schematics', 'json');
+generateSnippetsDocument('src/snippets/schema-snippets.json', 'docs/schema', 'Schema', 'json');
+generateSnippetsDocument('src/snippets/collection-snippets.json', 'docs/collection', 'Collection', 'typescript');
+generateSnippetsDocument('src/snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript', 'typescript');
 
 exec('git add .');
 exec('git commit -m "chore(doc): update documents"');
