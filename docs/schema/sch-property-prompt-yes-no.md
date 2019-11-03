@@ -1,4 +1,4 @@
-# sch-schema-property-prompt-yes-no
+# sch-property-prompt-yes-no
 
 Add a property to schema.json contains prompt Y/N
 

@@ -1,4 +1,4 @@
-# sch-schema-property-prompt-input
+# sch-property-prompt-input
 
 Add a property to schema.json contains prompt input
 

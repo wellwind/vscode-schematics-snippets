@@ -1,4 +1,4 @@
-# sch-schema-property
+# sch-property
 
 Add a property to schema.json
 

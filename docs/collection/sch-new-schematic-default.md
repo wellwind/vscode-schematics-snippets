@@ -1,4 +1,4 @@
-# sch-coll-new-schematic-default
+# sch-new-schematic-default
 
 Add a schematic to collection.json by deafult function
 

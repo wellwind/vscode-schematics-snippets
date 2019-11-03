@@ -1,4 +1,4 @@
-# sch-coll-new-schematic-function-name
+# sch-new-schematic-function-name
 
 Add a schematic to collection.json by function name
 

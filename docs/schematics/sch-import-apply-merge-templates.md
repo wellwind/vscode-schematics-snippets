@@ -1,6 +1,6 @@
-# sch-apply-merge-templates-import
+# sch-import-apply-merge-templates
 
-Import functions to apply and merge templates
+Import rules to apply and merge templates
 
 ```json
 import { apply, url, applyTemplates, move, chain, mergeWith } from '@angular-devkit/schematics';

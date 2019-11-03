@@ -1,4 +1,4 @@
-# sch-schema-property-prompt-selection
+# sch-property-prompt-selection
 
 Add a property to schema.json contains prompt selection
 

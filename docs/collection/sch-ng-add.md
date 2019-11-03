@@ -1,4 +1,4 @@
-# sch-coll-ng-add
+# sch-ng-add
 
 Add a schematic of "ng-add" to collection.json
 

@@ -1,4 +1,4 @@
-# sch-schema-property-dollar-default
+# sch-property-dollar-default
 
 Property $default
 
