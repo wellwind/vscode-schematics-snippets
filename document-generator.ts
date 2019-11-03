@@ -1,8 +1,9 @@
 import { exec } from 'child_process';
 import * as fs from 'fs';
-import * as markdownTable from 'markdown-table';
+// import * as markdownTable from 'markdown-table';
 import * as path from 'path';
 import * as shell from 'shelljs';
+const markdownTable = require('markdown-table');
 
 interface Snippet {
   scope: string;
