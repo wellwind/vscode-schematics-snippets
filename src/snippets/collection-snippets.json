@@ -1,6 +1,6 @@
 {
   "Add a schematic to collection.json by deafult function": {
-    "prefix": "sch-coll-new-schematic-default",
+    "prefix": "sch-new-schematic-default",
     "body": [
       "\"${1:schematic-name}\": {",
       "  \"description\": \"${2:Description.}\",",
@@ -10,7 +10,7 @@
     ]
   },
   "Add a schematic to collection.json by function name": {
-    "prefix": "sch-coll-new-schematic-function-name",
+    "prefix": "sch-new-schematic-function-name",
     "body": [
       "\"${1:schematic-name}\": {",
       "  \"description\": \"${3:Description.}\",",
@@ -20,7 +20,7 @@
     ]
   },
   "Add a schematic of \"ng-add\" to collection.json": {
-    "prefix": "sch-coll-ng-add",
+    "prefix": "sch-ng-add",
     "body": [
       "\"ng-add\": {",
       "  \"description\": \"${1:Description...}\",",

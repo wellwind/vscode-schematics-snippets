@@ -1,10 +1,10 @@
 {
   "Generate an export function with schematics template": {
-    "prefix": "sch-export-function-template",
+    "prefix": "sch-default-function",
     "body": [
       "import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';",
       "",
-      "export function ${1:index}(_options: any): Rule {",
+      "export default function ${1:index}(_options: any): Rule {",
       "  return (tree: Tree, _context: SchematicContext) => {",
       "    ${0}",
       "    return tree;",
@@ -74,8 +74,8 @@
       "chain([${1:rule1}, ${2:rule2}])"
     ]
   },
-  "Import functions to apply and merge templates": {
-    "prefix": "sch-apply-merge-templates-import",
+  "Import rules to apply and merge templates": {
+    "prefix": "sch-import-apply-merge-templates",
     "body": [
       "import { apply, url, applyTemplates, move, chain, mergeWith } from '@angular-devkit/schematics';",
       "import { strings, normalize } from '@angular-devkit/core';"
