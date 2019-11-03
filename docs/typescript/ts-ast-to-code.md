@@ -2,7 +2,7 @@
 
 Convert AST node to code
 
-```
+```typescript
 const resultFile = ts.createSourceFile(
   '',
   '',

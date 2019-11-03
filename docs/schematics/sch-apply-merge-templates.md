@@ -2,7 +2,7 @@
 
 Apply and merge templates
 
-```
+```json
 const ${1:templateSource} = apply(url('${2:./files}'), [
   applyTemplates({
     classify: strings.classify,

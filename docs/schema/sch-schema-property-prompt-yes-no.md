@@ -2,7 +2,7 @@
 
 Add a property to schema.json contains prompt Y/N
 
-```
+```json
 "${1:property}": {
   "description": "${2:description}",
   "type": "boolean",

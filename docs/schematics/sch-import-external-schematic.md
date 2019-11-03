@@ -2,6 +2,6 @@
 
 Import externalSchematic
 
-```
+```json
 import { externalSchematic } from '@angular-devkit/schematics';
 ```

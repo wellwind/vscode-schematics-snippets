@@ -2,7 +2,7 @@
 
 schema.json template
 
-```
+```json
 {
  "schema": "http://json-schema.org/schema",
  "id": "${1:schematics-id}",
