@@ -74,10 +74,10 @@ const generateSnippetsDocument = (snippetPath: string, docFolder: string, replac
   replaceReadmeSnippets(docFolder, snippets, replaceBlock);
 };
 
-generateSnippetsDocument('snippets/schematics-snippets.json', 'docs/schematics', 'Schematics');
-generateSnippetsDocument('snippets/schema-snippets.json', 'docs/schema', 'Schema');
-generateSnippetsDocument('snippets/collection-snippets.json', 'docs/collection', 'Collection');
-generateSnippetsDocument('snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript');
+generateSnippetsDocument('src/snippets/schematics-snippets.json', 'docs/schematics', 'Schematics');
+generateSnippetsDocument('src/snippets/schema-snippets.json', 'docs/schema', 'Schema');
+generateSnippetsDocument('src/snippets/collection-snippets.json', 'docs/collection', 'Collection');
+generateSnippetsDocument('src/snippets/typescript-snippets.json', 'docs/typescript', 'TypeScript');
 
 exec('git add .');
 exec('git commit -m "chore(doc): update documents"');
