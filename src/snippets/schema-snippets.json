@@ -1,6 +1,6 @@
 {
   "schema.json template": {
-    "prefix": "sch-json",
+    "prefix": "sch-default-json",
     "body": [
       "{",
       " \"schema\": \"http://json-schema.org/schema\",",

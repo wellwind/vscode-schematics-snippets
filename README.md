@@ -48,7 +48,7 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 | Snippet Name                    | Generated Code                                       | Description                                             |
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------------------------- |
-| `sch-json`                      | [code](docs/schema/sch-json.md)                      | schema.json template                                    |
+| `sch-default-json`              | [code](docs/schema/sch-default-json.md)              | schema.json template                                    |
 | `sch-property`                  | [code](docs/schema/sch-property.md)                  | Add a property to schema.json                           |
 | `sch-property-prompt-input`     | [code](docs/schema/sch-property-prompt-input.md)     | Add a property to schema.json contains prompt input     |
 | `sch-property-prompt-yes-no`    | [code](docs/schema/sch-property-prompt-yes-no.md)    | Add a property to schema.json contains prompt Y/N       |

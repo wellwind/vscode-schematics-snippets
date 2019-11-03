@@ -1,4 +1,4 @@
-# sch-json
+# sch-default-json
 
 schema.json template
 
