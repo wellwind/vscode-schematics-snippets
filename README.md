@@ -85,6 +85,10 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 Users appreciate release notes as you update your extension.
 
+### 4.0.1
+
+- Because of some technical problem, now we are in 4.0.1 😜.
+
 ### 2.0.0
 
 - Now we support snippet in `schema.json` and `collection.json` separately.
