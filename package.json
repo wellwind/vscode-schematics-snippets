@@ -14,7 +14,7 @@
     "gen:document": "ts-node document-generator.ts"
   },
   "engines": {
-    "vscode": "^1.38.0"
+    "vscode": "^1.39.0"
   },
   "categories": [
     "Snippets"
