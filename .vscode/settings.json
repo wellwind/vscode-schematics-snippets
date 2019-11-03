@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "src/extension.js": true,
+        "src/extension.js.*": true
+    }
+}
