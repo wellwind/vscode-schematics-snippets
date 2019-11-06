@@ -17,15 +17,24 @@
     "vscode": "^1.39.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Other"
   ],
   "icon": "icon.png",
   "activationEvents": [
     "onLanguage:typescript",
-    "onLanguage:json"
+    "onLanguage:json",
+    "onCommand:schematicToolkit.genSchematic"
   ],
   "main": "src/extension.js",
-  "contributes": {},
+  "contributes": {
+    "commands": [
+      {
+        "command": "schematicToolkit.genSchematic",
+        "title": "Schematics: Generate A Schematic"
+      }
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wellwind/vscode-schematics-snippets.git"
