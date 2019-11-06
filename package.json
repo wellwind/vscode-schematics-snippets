@@ -21,7 +21,8 @@
   ],
   "icon": "icon.png",
   "activationEvents": [
-    "*"
+    "onLanguage:typescript",
+    "onLanguage:json"
   ],
   "main": "src/extension.js",
   "contributes": {},
