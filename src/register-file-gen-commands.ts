@@ -13,12 +13,12 @@ const generateSchematic = (collectionPath: string, name: string) => {
 
   const indexContent = `import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 
-  export default function ${camelize(name)}(_options: any): Rule {
-    return (tree: Tree, _context: SchematicContext) => {
+export default function ${camelize(name)}(_options: any): Rule {
+  return (tree: Tree, _context: SchematicContext) => {
 
-      return tree;
-    };
-  }
+    return tree;
+  };
+}
 `;
   fs.writeFileSync(indexFilePath, indexContent);
 
@@ -30,8 +30,8 @@ const generateSchematic = (collectionPath: string, name: string) => {
     "description": "${name}",
     "properties": {},
     "required": []
-   }
- `;
+}
+`;
 
   fs.writeFileSync(schemaFilePath, schemaContent);
 

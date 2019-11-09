@@ -25,15 +25,15 @@
   },
   "Create a file to the tree": {
     "prefix": "sch-tree-create",
-    "body": "tree.create(${1:path}, ${2:content})"
+    "body": "tree.create(${1:path}, ${2:content});"
   },
   "Overwrite a file content from the tree": {
     "prefix": "sch-tree-overwrite",
-    "body": "tree.overwrite(${1:path}, ${2:content})"
+    "body": "tree.overwrite(${1:path}, ${2:content});"
   },
   "Delete a file from the tree": {
     "prefix": "sch-tree-delete",
-    "body": "tree.delete(${1:path})"
+    "body": "tree.delete(${1:path});"
   },
   "Delete a directory from the tree": {
     "prefix": "sch-tree-delete-directory",
@@ -41,11 +41,11 @@
   },
   "Rename a file from the tree": {
     "prefix": "sch-tree-rename",
-    "body": "tree.rename(${1:from}, ${2:to})"
+    "body": "tree.rename(${1:from}, ${2:to});"
   },
   "Read a file from the tree": {
     "prefix": "sch-tree-read",
-    "body": "const ${1:content} = tree.read(${2:path}).toString('${3:UTF-8}')"
+    "body": "const ${1:content} = tree.read(${2:path}).toString('${3:UTF-8}');"
   },
   "Check a file exist in the tree": {
     "prefix": "sch-tree-exist",
@@ -71,7 +71,7 @@
   "Chain schematic rules": {
     "prefix": "sch-chain-rules",
     "body": [
-      "chain([${1:rule1}, ${2:rule2}])"
+      "chain([${1:rule1}, ${2:rule2}]);"
     ]
   },
   "Import rules to apply and merge templates": {
