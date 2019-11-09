@@ -3,5 +3,5 @@
 Delete a file from the tree
 
 ```json
-tree.delete(${1:path})
+tree.delete(${1:path});
 ```

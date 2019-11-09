@@ -3,5 +3,5 @@
 Chain schematic rules
 
 ```json
-chain([${1:rule1}, ${2:rule2}])
+chain([${1:rule1}, ${2:rule2}]);
 ```

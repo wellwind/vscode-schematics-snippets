@@ -3,5 +3,5 @@
 Import TypeScript Compiler API
 
 ```typescript
-import * as ts from 'typescript'
+import * as ts from 'typescript';
 ```
