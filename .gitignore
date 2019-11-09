@@ -1,5 +1,5 @@
 *.vsix
 node_modules/
 yarn-error.log
-src/*.js
-src/*.js.map
+src/**/*.js
+src/**/*.js.map
