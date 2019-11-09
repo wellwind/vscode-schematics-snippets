@@ -88,7 +88,10 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 5.0.0
+
+- Generate a schematic set by `F1` -> `Schematics: Generate A Schematic`.
+- Add semicolon to single line snippet.
 
 ### 4.0.1
 
