@@ -4,11 +4,16 @@ Code snippets collection for writing [@angular-devkit/schematics](https://www.np
 
 ## Features
 
-- Simply use `sch-*` schematics to generate schematics related codes.
+- Generate schematic file: `F1` -> `Schematics: Generate A Schematic`.
+- Snippets: Use `sch-*` snippets to generate schematics related codes.
 - Sometimes we might use TypeScript Compiler API, there are `ts-*` snippets to generate some useful AST (Abstract Syntax Tree) manipulation code.
-- For the code of snippet, see it [here](docs/).
+- For the full generated code of snippet, see it [here](docs/).
 
-### Schematics Snippets
+### Generate schematic file
+
+![featire: generate schematic file](docs/images/feat-generate-schematic.gif)
+
+### Snippets
 
 #### In \*.ts
 
