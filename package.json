@@ -3,7 +3,7 @@
   "displayName": "Schematics Snippets",
   "description": "Code snippets collection for writing @angular-devkit/schematics",
   "publisher": "mikehuang",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "vsce:publish": "vsce publish",
