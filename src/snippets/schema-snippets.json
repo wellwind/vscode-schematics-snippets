@@ -40,7 +40,7 @@
       "\"${1:property}\": {",
       "  \"description\": \"${2:description}\",",
       "  \"type\": \"boolean\",",
-      "  \"default\": \"${3:true}\",",
+      "  \"default\": ${3:true},",
       "  \"x-prompt\": \"${4:message}\"",
       "}"
     ]
@@ -66,8 +66,8 @@
   "Property $default": {
     "prefix": "sch-property-dollar-default",
     "body": [
-      "\"$$default\": {",
-      "  \"$$source\": \"argv\",",
+      "\"$${1:default}\": {",
+      "  \"$${2:source}\": \"argv\",",
       "  \"index\": 0",
       "}"
     ]
